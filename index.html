@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/src/style/style.css">
+</head>
+
+<body>
+    <section class="container-calculadora">
+        <div class="calculadora">
+            <form>
+                <div class="resultado">
+                    <input class="inicial" type="text" name="resultado" placeholder="0">
+                </div>
+                <div>
+                    <input type="button" value="CE" onclick="resultado.value = ''" class="operador">
+                    <input type="button" value="<" onclick="apagarUltimoCaractere()" class="operador">
+                    <input type="button" value="." onclick="resultado.value += '.'" class="operador">
+                    <input type="button" value="÷" onclick="resultado.value += '/'"class="operadores">
+                </div>
+                <div> 
+                    <input type="button" value="7" onclick="resultado.value += '7'" class="operador">
+                    <input type="button" value="8" onclick="resultado.value += '8'" class="operador">
+                    <input type="button" value="9" onclick="resultado.value += '9'" class="operador">
+                    <input type="button" value="x" onclick="resultado.value += '*'" class="operadores">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="resultado.value += '4'" class="operador">
+                    <input type="button" value="5" onclick="resultado.value += '5'" class="operador">
+                    <input type="button" value="6" onclick="resultado.value += '6'" class="operador">
+                    <input type="button" value="-" onclick="resultado.value += '-'" class="operadores">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="resultado.value += '1'" class="operador">
+                    <input type="button" value="2" onclick="resultado.value += '2'" class="operador">
+                    <input type="button" value="3" onclick="resultado.value += '3'" class="operador">
+                    <input type="button" value="+" onclick="resultado.value += '+'" class="operadores">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="resultado.value += '0'" class="zero">
+                    <input type="button" value="=" onclick="calcularIgual()" class="igual">
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+<script src="/src/main.js"></script>
+</html>

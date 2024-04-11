@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    
+
+}
+
+body {
+    background: linear-gradient(45deg, #FFCBFF, #7349d5);
+}
+
+.container-calculadora {
+    
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculadora {
+    width: 312px;
+    height: 426px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.resultado {
+    width: 281px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+   
+}
+
+.resultado input::placeholder{
+    color: black;
+}
+
+.inicial {
+    width: 265px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FFCBFF;
+    margin: 8px;
+    font-size: 30px;
+    padding: 5px;
+    text-align: right;    
+    
+}
+
+
+.operador {
+    width: 50px;
+    height: 40px;
+    margin: 8px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.operadores {
+    width: 50px;
+    height: 40px;
+    margin: 8px;    
+    border-radius: 10px;
+    background-color: #FFCBFF;
+}
+
+.zero {
+    width: 150px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.igual {
+    width: 90px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: #FFCBFF;
+}
+
+form input:hover {
+    cursor: pointer;
+}
